@@ -1,0 +1,90 @@
+// Global Styles
+
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+// Variables
+
+$color_black: #000;
+$bright_black: #161616;
+$color_white: #fff;
+
+$main_font: 'Fjalla One', sans-serif;;
+
+$font_regular: 400;
+$font_medium: 500;
+$font_bold: 700;
+
+// Main Style
+
+.main-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main-content {
+    height: 80%;
+    // background-color: $bright_black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+    &-logo {
+        width: 32px;
+        height: 32px;
+        background: url(https://www.hermanmiller.com/etc/designs/hermanmiller/img/global/logo-global-hm-110.png) center center / cover no-repeat;
+        vertical-align: middle;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_black;
+        }
+    }
+
+    nav a {
+        margin-left: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font: {
+            family: $main_font;
+            size: .8rem;
+        }
+    }
+
+    &-title {
+        line-height: 4rem;
+        width: 80%;
+        text-transform: uppercase;
+        font: {
+            family: $main_font;
+            size:3rem;
+        }
+    }
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    flex:1;
+    background: url(https://images.unsplash.com/photo-1489269637500-aa0e75768394?ixlib=rb-0.3.5&s=60778ff3c1536b6401434252284e1427&auto=format&fit=crop&w=1925&q=80) center center / cover no-repeat;
+}
